@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" ng-app>
-<head>
-    <meta charset="UTF-8">
-    <title>Angular Advance</title>
-</head>
-<body>
 
-    <h1 ng-controller="HelloWorldCtrl">{{helloMessage}}</h1>
+    <head>
 
-    <script src="angular.min.js"></script>
-    <script type="text/javascript">
+        <meta charset="UTF-8">
+        <title>Angular Advance</title>
 
-        function HelloWoasrldCtrl($scope){
+    </head>
 
-            $scope.helloMessage = "Hello Amir!";
+    <body>
 
-        }
+        <input type="text" ng-model="name">
 
-    </script>
+        <h1>Hi {{name}}!</h1>
 
-</body>
+        <script src="angular.min.js"></script>
+
+    </body>
+
 </html>
