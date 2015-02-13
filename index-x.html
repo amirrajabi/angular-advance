@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html ng-app>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <title>Angular Advance</title>
+
+        <script src="lib/angular/angular.min.js"></script>
+
+    </head>
+
+    <body ng-controller="personController">
+
+        <h1>My name is {{person.name}}</h1>
+        <p>I am {{person.job}}</p>
+        <p>I live in {{person.city}}</p>
+
+        <script>
+
+            function personController($scope){
+
+                $scope.person = {
+                    'name' : 'AMIR',
+                    'job' : 'FRONT END DEVELOPER',
+                    'city' : 'MELBOURNE'
+                }
+
+            }
+
+        </script>
+
+    </body>
+
+</html>
