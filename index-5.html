@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="AdvanceAngular">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Advance Angular</title>
+    <script src="lib/angular/angular.min.js"></script>
+    <script src="js/controllers-5.js"></script>
+</head>
+<body>
+
+<section class="main" ng-controller="MovieController">
+
+    <ul class="list">
+        <li class="item" ng-repeat="item in movies">
+
+            <img ng-src="{{item.image}}" width="50" alt=""/>
+            <h3>{{item.name}}</h3>
+            <p>{{item.type}}</p>
+
+        </li>
+    </ul>
+
+</section>
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<section>
+
+    <a href="#/details/{{prevItem}}">
+        Prev
+    </a>
+
+    <a href="#/details/{{nextItem}}">
+        next
+    </a>
+
+    <div ng-model="movies">
+        <img ng-src="{{movies[whichItem].image}}" width="150" alt=""/>
+        <h3>{{movies[whichItem].name}}</h3>
+        <p>{{movies[whichItem].type}}</p>
+        <p>{{movies[whichItem].total}}</p>
+        <p>{{movies[whichItem].budget}}</p>
+        <p>{{movies[whichItem].runT}}</p>
+    </div>
+
+</section>
