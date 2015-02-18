@@ -20,8 +20,8 @@
     <input type="radio" name="direction" ng-model="direction" value="reverse">
 
 
-    <ul class="list">
-        <li class="item" ng-repeat="item in movies | filter: query | filter: type | orderBy: sort:direction">
+    <ul class="list" ng-show="query">
+        <li ng-animate="'animate'" class="movies item" ng-repeat="item in movies | filter: query | filter: type | orderBy: sort:direction">
             <a href="#/details/{{movies.indexOf(item)}}">
                 <img ng-src="{{item.image}}" width="50" alt=""/>
                 <h3>{{ item.name}}</h3>
