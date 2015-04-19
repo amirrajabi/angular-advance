@@ -1,0 +1,35 @@
+.list li{
+
+    opacity: 0.9;
+
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+
+}
+
+.list li:hover{
+
+    opacity: 1;
+
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+
+}
+
+.movies.ng-enter.ng-enter-active,
+.movies.ng-leave {
+    opacity: 1;
+    height: 116px;
+    overflow: hidden;
+}
+
+.movies.ng-leave.ng-leave-active,
+.movies.ng-enter {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
